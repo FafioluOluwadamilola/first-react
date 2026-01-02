@@ -3,7 +3,6 @@ import Search from './components/Search'
 import Spinner from './components/Spinner'
 import MovieCard from './components/MovieCard';
 import { useDebounce } from 'react-use';
-import { SpeedInsights } from "@vercel/speed-insights/react"
 import { getTrendingMovies, updateSearchCount } from './appwrite';
 
 const API_BASE_URL = "https://api.themoviedb.org/3"
@@ -131,8 +130,6 @@ const App = () => {
               </ul>
           )} 
         </section>
-          
-          <SpeedInsights />
 
       </div>
 
